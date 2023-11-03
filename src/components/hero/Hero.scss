@@ -21,6 +21,7 @@
       margin: 0 50px;
 
       @include mobile {
+        gap: 10px;
         height: 70%;
         width: 100%;
         align-items: center;
@@ -48,6 +49,12 @@
         display: flex;
         gap: 20px;
         z-index: 5;
+
+        @include mobile {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
         a {
           padding: 20px;
           border: 1px solid white;
@@ -81,12 +88,13 @@
     z-index: 0;
 
     @include tablet {
-      height: 60%;
-      width: 70%;
+      opacity: 0.6;
+      height: 80%;
+      width: 60%;
     }
 
     @include mobile {
-      height: auto;
+      height: 70%;
       width: 100%;
       border-radius: 0;
     }

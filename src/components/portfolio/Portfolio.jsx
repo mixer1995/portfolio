@@ -8,28 +8,32 @@ const items = [
     title: "Game Hub",
     img: "/gameHub.png",
     desc: ["I've developed a React project that serves as a versatile game library. Users can easily sort and manage their games by genre, platform, and search queries. The project fetches data from an external API, ensuring that the latest games, genres, and platforms are readily available. To maintain a seamless user experience, loading skeletons are displayed during data retrieval.", "In addition to its practical features, the project offers a choice between light and dark themes, allowing users to tailor their interface to their preferences. What sets this project apart is its full responsiveness, ensuring that the application adapts smoothly to different screen sizes and devices, making it accessible and enjoyable for users across the board."],
-    target: "https://mixer1995.github.io/game_hub/"
+    target: "https://mixer1995.github.io/game_hub/",
+    srcTarget: "https://github.com/mixer1995/game_hub"
   },
   {
     id: 2,
     title: "Next.js Blog",
     img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
     desc: ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum."],
-    target: ""
+    target: "",
+    srcTarget: ""
   },
   {
     id: 3,
     title: "Vanilla JS App",
     img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
     desc: ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum."],
-    target: ""
+    target: "",
+    srcTarget: ""
   },
   {
     id: 4,
     title: "Music App",
     img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     desc: ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum."],
-    target: ""
+    target: "",
+    srcTarget: ""
   },
 ];
 
@@ -54,8 +58,10 @@ const Single = ({ item }) => {
             {item.desc.map((text, i) => (
               <p key={i}>{text}</p>
             ))}
-            {item.target !== "" && <a href={item.target} target="_blank">See Demo</a>}
-            
+            <div>
+              {item.target !== "" && <a href={item.target} target="_blank">See Demo</a>}
+              {item.srcTarget !== "" && <a href={item.srcTarget} target="_blank">Code</a>}
+            </div>
           </motion.div>
         </div>
       </div>

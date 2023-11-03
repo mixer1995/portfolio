@@ -9,8 +9,10 @@
     left: 0;
     padding-top: 50px;
     text-align: center;
-    color: orange;
+    color: white;
     font-size: 36px;
+    
+    z-index: 10 ;
 
     @include mobile {
       padding-top: calc(100vh - 90px);
@@ -40,6 +42,10 @@
       justify-content: center;
       gap: 50px;
 
+      @include tablet {
+        gap: 25px;
+      }
+
       @include mobile {
         flex-direction: column;
         gap: 0px;
@@ -48,6 +54,10 @@
       .imageContainer {
         flex: 1;
         height: 50%;
+
+        @include tablet {
+          height: 30%;
+        }
 
         @include mobile {
           width: 100%;
@@ -83,6 +93,7 @@
           align-items: center;
           text-align: center;
           gap: 5px;
+          flex: none;
         }
 
         h2 {
@@ -95,10 +106,10 @@
 
         p {
           color: gray;
-          font-size: 20px;
+          font-size: 22px;
 
           @include tablet {
-            font-size: 16px;
+            font-size: 18px;
           }
 
           @include mobile {
@@ -106,17 +117,42 @@
           }
         }
 
-        a {
-          color: black;
-          text-align: center;
-          background-color: orange;
-          border: none;
-          border-radius: 10px;
-          padding: 10px;
-          margin: 10px 0 85px 0;
-          width: 200px;
-          cursor: pointer;
-          z-index: 4;
+        p:nth-child(2) {
+
+          @include mobile {
+            display: none;
+          }
+        }
+
+        div {
+          display: flex;
+          flex-direction: row;
+          gap: 20px;
+          
+
+          @include mobile {
+            width: 100%;
+            margin: 10px 0 85px 0;
+            gap: 0;
+            justify-content: space-around;
+          }
+
+          a {
+            color: black;
+            text-align: center;
+            background-color: orange;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            //margin: 10px 0 85px 0;
+            width: 200px;
+            cursor: pointer;
+            z-index: 3;
+
+            @include tablet {
+              width: 45%;
+            }
+          }
         }
       }
     }
