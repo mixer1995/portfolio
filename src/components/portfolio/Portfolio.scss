@@ -12,7 +12,7 @@
     color: white;
     font-size: 36px;
     
-    z-index: 10 ;
+    z-index: 6;
 
     @include mobile {
       padding-top: calc(100vh - 90px);
@@ -42,6 +42,8 @@
       justify-content: center;
       gap: 50px;
 
+      position: relative;
+
       @include tablet {
         gap: 25px;
       }
@@ -54,6 +56,14 @@
       .imageContainer {
         flex: 1;
         height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        
+
+        
 
         @include tablet {
           height: 30%;
@@ -67,12 +77,24 @@
         img {
           width: 100%;
           height: 100%;
-          object-fit: cover;
+          object-fit: scale-down;
+          transition: opacity 1s ease-out;
+          position: absolute;
 
           @include mobile {
             object-fit: contain;
           }
         }
+      }
+
+      .imageContainer:hover {
+        //transform: scale(1.3);
+        transition: ease-in-out 1s;
+        position: absolute;
+
+        width: 100%;
+        height: 100%;
+        z-index: 7;
       }
 
       .textContainer {
@@ -97,7 +119,7 @@
         }
 
         h2 {
-          font-size: 72px;
+          font-size: 68px;
 
           @include mobile {
             font-size: 36px;
@@ -117,7 +139,7 @@
           }
         }
 
-        p:nth-child(2) {
+        p:nth-child(3) {
 
           @include mobile {
             display: none;
@@ -147,7 +169,7 @@
             //margin: 10px 0 85px 0;
             width: 200px;
             cursor: pointer;
-            z-index: 3;
+            z-index: 6;
 
             @include tablet {
               width: 45%;
