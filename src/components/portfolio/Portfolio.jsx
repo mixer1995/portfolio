@@ -9,9 +9,12 @@ import lp2 from './../../images/leanP-02.png'
 import lp3 from './../../images/leanP-03.png'
 import lp4 from './../../images/leanP-04.png'
 import lp5 from './../../images/leanP-05.png'
+import lp6 from './../../images/leanP-06.png'
 import oee1 from './../../images/oeeP-01.png'
 import oee2 from './../../images/oeeP-02.png'
 import oee3 from './../../images/oeeP-03.png'
+import fp1 from './../../images/farmP-01.png'
+import fp2 from './../../images/farmP-02.png'
 
 const items = [
   {
@@ -25,7 +28,7 @@ const items = [
   {
     id: 2,
     title: "Employee Knowledge Hub (Php)",
-    img: [lp1, lp2, lp3, lp4, lp5],
+    img: [lp1, lp2, lp3, lp4, lp5, lp6],
     desc: ["The Employee Knowledge Hub is a one-stop platform, developed in-house, that enables employees to access learning materials, take tests, review their results, and sign essential documents. Empower your workforce with this intuitive and efficient tool for continuous learning and development!", "In addition - fully responsive design is implemented, so that employees would be able to use this portal on any device."],
     target: "",
     srcTarget: ""
@@ -33,8 +36,16 @@ const items = [
   {
     id: 3,
     title: "OEE tracking site (Php)",
-    img: [ oee1, oee2, oee3 ],
+    img: [oee1, oee2, oee3],
     desc: ["Elevate your manufacturing operations to new heights with our state-of-the-art OEE tracking site. Our platform offers real-time data visualization that provides valuable insights into your production processes, enabling you to identify and address bottlenecks, downtime, and inefficiencies on the fly. By harnessing the power of real-time data, you can make informed decisions that lead to significant improvements in productivity, quality, and overall operational effectiveness. Streamline your manufacturing processes, optimize resource utilization, and boost your bottom line with our OEE tracking site."],
+    target: "",
+    srcTarget: ""
+  },
+  {
+    id: 4,
+    title: "Farmers' portal (Php)",
+    img: [fp1, fp2],
+    desc: ["Access real-time milk transportation data, including quantity, types, fat/protein percentages, and more. Enjoy a mobile-friendly interface for on-the-go efficiency. Optimize operations with precise insights at your fingertips."],
     target: "",
     srcTarget: ""
   },
