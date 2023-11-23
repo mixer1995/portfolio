@@ -1,5 +1,9 @@
 import { motion } from 'framer-motion'
 import './Hero.scss'
+import pdfLink from './../../download/MShkCV.pdf'
+import scrollImg from './../../images/scroll.png'
+import heroImg from './../../images/hero.jpg'
+
 
 const textVariants = {
     initial: {
@@ -56,16 +60,16 @@ const Hero = () => {
                     <motion.div className="buttons" variants={textVariants}>
                         <motion.a href='#Portfolio' variants={textVariants}>See the Latest Works</motion.a>
                         <motion.a href='#Contacts' variants={textVariants}>Contact Me</motion.a>
-                        <motion.a href='/public/MShkCV.pdf' download='MShkolnyi-CV.pdf' variants={textVariants}>Download CV</motion.a>
+                        <motion.a href={pdfLink} download='MShkolnyi-CV.pdf' variants={textVariants}>Download CV</motion.a>
                     </motion.div>
-                    <motion.img src="/scroll.png" alt="" variants={textVariants} animate="scrollButton" />
+                    <motion.img src={scrollImg} alt="" variants={textVariants} animate="scrollButton" />
                 </motion.div>
             </div>
             <motion.div className="slidingTextContainer" variants={sliderVariants} initial='initial' animate='animate'>
                 Web-Developer Programmer
             </motion.div>
             <div className="imageContainer">
-                <img src="/hero.jpg" alt="" />
+                <img src={heroImg} alt="" />
             </div>
         </div>
     );

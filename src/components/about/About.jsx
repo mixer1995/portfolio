@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import "./About.scss";
 import { motion, useInView } from "framer-motion";
+import pplLogo from './../../images/people.webp'
 
 const variants = {
   initial: {
@@ -41,7 +42,7 @@ const About = () => {
       </motion.div>
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
-          <img src="/people.webp" alt="" />
+          <img src={pplLogo} alt="" />
           <h1>
             <motion.b whileHover={{ color: "orange" }}>Unique</motion.b> Ideas
           </h1>
