@@ -27,7 +27,7 @@ const items = [
     title: "Employee Knowledge Hub (Php)",
     img: [lp1, lp2, lp3, lp4, lp5],
     desc: ["The Employee Knowledge Hub is a one-stop platform, developed in-house, that enables employees to access learning materials, take tests, review their results, and sign essential documents. Empower your workforce with this intuitive and efficient tool for continuous learning and development!", "In addition - fully responsive design is implemented, so that employees would be able to use this portal on any device."],
-    target: "http://man.e-pienas.lt/index.php",
+    target: "",
     srcTarget: ""
   },
   {
