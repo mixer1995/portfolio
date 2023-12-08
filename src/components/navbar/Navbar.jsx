@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import "./Navbar.scss"
 import Sidebar from '../sidebar/Sidebar';
-import gitLogo from './../../images/github.png'
+import gitLogo from './../../images/github2.png'
 import linkedLogo from './../../images/linkedIn.png'
 import fbLogo from './../../images/facebook.png'
 
