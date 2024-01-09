@@ -13,7 +13,7 @@ const Navbar = () => {
                 <motion.span initial={{opacity: 0, scale: 0.5}} animate={{opacity: 1, scale: 1}} transition={{duration: 0.5}}>Maksym Shkolnyi</motion.span>
                 <div className="social">
                     <a href="https://github.com/mixer1995" target='_blank'><img src={gitLogo} alt="gitLogo" /></a>
-                    <a href="https://www.linkedin.com/in/maksym-shkolnyi-5b436716b/" target='_blank'><img src={linkedLogo} alt="linkedLogo" /></a>
+                    <a href="https://www.linkedin.com/in/maksym-shk/" target='_blank'><img src={linkedLogo} alt="linkedLogo" /></a>
                     <a href="https://www.facebook.com/mixer95" target='_blank'><img src={fbLogo} alt="fbLogo" /></a>
                 </div>
             </div>
