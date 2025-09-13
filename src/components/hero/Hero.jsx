@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import './Hero.scss'
-import pdfLink from './../../download/MShkCV.pdf'
+import pdfLink from './../../download/MShkolnyi-CV.pdf'
 import scrollImg from './../../images/scroll.png'
 import heroImg from './../../images/hero.jpg'
 
